@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.container{
+    width: 70%;
+    padding: 50px 0;
+    background-color:#1b1919;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+}
+.bar{
+    width: 90%;
+    background: #b6b6b6;
+    height: 30px;
+    margin: 10px auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.fill{
+    width: 1%;
+    height: 100%;
+    background:linear-gradient(45deg,#f00144,#fd5900) ;
+}
+.counter{
+    font-size: 40px;
+    font-weight: 800;
+    color: #f00144;
+    font-family: monospace;
+    padding: 5px 0;
+}
+button{
+    text-transform: uppercase;
+    border: 2px solid #f00144;
+    background-color: #1b1919;
+    font-family: monospace;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50px;
+}
+.output{
+    width: 50%;
+    padding: 30px 0;
+    background-color:#1b1919;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.output .fa-solid{
+    height: 150px;
+    width: 150px;
+    border:5px solid #f00144;
+    line-height: 150px;
+    border-radius: 50%;
+    color: #f00144;
+    font-size: 85px;
+    margin-bottom: 30px;
+    animation: anime1 1s ease;
+}
+@keyframes anime1{
+    0%{
+        transform: translateY(60px) scale(0.7) rotate(0deg);
+        opacity: 0.2;
+    }
+    50%{
+        transform: scale(0.3) rotate(90deg) skewY(-40deg);
+        width: 50px;
+    }
+    75%{
+        transform: scale(1.4) rotate(180deg)  skewY(20deg) ;
+        width: 10px;
+    }
+    100%{
+        transform: translateY(0px) scale(1) rotate(360deg);
+        opacity: 1;
+    } 
+}
+p{
+    font-family:sans-serif;
+    color: #f00144;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
